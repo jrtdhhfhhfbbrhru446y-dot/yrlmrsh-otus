@@ -1,0 +1,78 @@
+/* Static base for the archived native Tilda blocks (T1272, T702, T1015, T420).
+ * The generated project stylesheet is no longer served by the expired project.
+ * Approved record-specific styles from the snapshot override these primitives.
+ */
+:root { --t-text-font: 'Manrope', Arial, sans-serif; --t-title-font: 'Manrope', Arial, sans-serif; }
+.t-body { margin: 0; font-family: var(--t-text-font); color: #000; background: #f7f8fa; }
+.t-body a { color: #ff8562; text-decoration: none; }
+.t-records { -webkit-font-smoothing: antialiased; }
+.t-records a { color: #ff8562; text-decoration: none; }
+.t-title, .t-name, .t-heading { font-family: var(--t-title-font); font-weight: 600; }
+.t-text, .t-descr { font-family: var(--t-text-font); font-weight: 400; }
+.t-text { line-height: 1.55; }
+.t-descr { line-height: 1.55; }
+.t-title_xxs { font-size: 36px; line-height: 1.23; }
+.t-descr_xs { font-size: 16px; }
+.t-descr_md { font-size: 20px; }
+.t-text_md { font-size: 20px; }
+.t-align_center { text-align: center; }
+.t-align_left { text-align: left; }
+.t-btn, .t-btnflex { font-family: var(--t-text-font); text-decoration: none; box-sizing: border-box; cursor: pointer; }
+.t-btnflex { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; }
+.t-btnflex_smd { min-height: 40px; padding: 10px 30px; font-size: 14px; }
+.t-btnflex__text { display: block; }
+.t-img { max-width: 100%; }
+.t-input-title { display: block; }
+.t-input-subtitle { display: block; }
+.t-input-error { display: none; }
+.t-form__errorbox-middle, .t-form__errorbox-bottom { display: none; }
+.t-form__submit { margin-top: 30px; }
+.t-form__submit button { display: inline-flex; align-items: center; justify-content: center; }
+.t702__wrapper { padding: 40px 45px; }
+.t702__text-wrapper { margin-bottom: 24px; }
+.t702 .t-input-group { margin-bottom: 25px; }
+.t702 .t-input-title { padding-bottom: 5px; }
+.t-popup { box-sizing: border-box; position: fixed; inset: 0; display: none; z-index: 100000; overflow: auto; }
+.t-popup__container { box-sizing: border-box; position: relative; background: #fff; margin: 65px auto; }
+.t-popup__close { position: fixed; top: 20px; right: 20px; z-index: 100001; }
+.t-popup__close-wrapper { display: flex; align-items: center; justify-content: center; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.t-popup__close-icon { display: block; }
+.t420 { padding: 0; }
+.t420__col { box-sizing: border-box; }
+.t420__logo { display: block; max-width: 120px; }
+.t420__text { margin-top: 30px; }
+.t420__title { margin-bottom: 14px; }
+.t420__descr ul { list-style: none; padding: 0; }
+.t-menu-base { box-sizing: border-box; width: 100%; z-index: 990; }
+.t-menu-base_positionfixed { position: fixed; top: 0; left: 0; }
+.t-menu-base__maincontainer { box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 30px; width: 100%; padding: 0 40px; }
+.t-menu-base__logowrapper { flex-shrink: 0; }
+.t-menu-base__logo { display: flex; align-items: center; }
+.t-menu-base__imglogo { display: block; height: auto; max-height: 100%; object-fit: contain; }
+.t-menu-base__wrapper { display: flex; align-items: center; }
+.t-menu-base__leftwrapper { flex: 1 1 auto; justify-content: flex-start; }
+.t-menu-base__list { display: flex; flex-wrap: wrap; align-items: center; list-style: none; margin: 0; padding: 0; }
+.t-menu-base__list-item { display: block; margin: 0; padding: 0; white-space: nowrap; }
+.t-menu-base__additionalwrapper { display: flex; align-items: center; gap: 28px; }
+.t-menu-base__right_descr { white-space: nowrap; }
+.t-menu-base__right_descr p { margin: 0; }
+.t-menu-base__right_descr a { color: inherit; }
+.t-menu-base__buttons { display: flex; align-items: center; }
+.t-menu-base__burger_mlauto { margin-left: auto; }
+.t-menu-base__burger_mlauto button { cursor: pointer; }
+@media (min-width: 961px) and (max-width: 1280px) {
+  .t-menu-base__maincontainer { padding-inline: 24px; gap: 20px; }
+  .t-menu-base__additionalwrapper { gap: 18px; }
+  .t-menu-base__right_descr { display: none; }
+}
+@media (max-width: 960px) {
+  .t-menu-base__logowrapper:not(.t-menu-base__logowrapper_mobile) { display: none; }
+  .t-menu-base__maincontainer { display: block; padding: 0 24px; }
+  .t-menu-base__leftwrapper, .t-menu-base__rightwrapper { width: 100%; }
+  .t-menu-base__additionalwrapper { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; margin-top: 32px; }
+  .t-menu-base__list-item { white-space: normal; }
+  .t-menu-base__right_descr { display: block; }
+}
+@media (max-width: 480px) {
+  .t-screenmin-480px { display: none !important; }
+}
